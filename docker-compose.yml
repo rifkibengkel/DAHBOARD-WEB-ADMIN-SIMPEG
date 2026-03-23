@@ -1,0 +1,24 @@
+services:
+  app:
+    build: .
+    container_name: simpeg-web-admin-container
+    ports:
+      - 5020:5020
+    environment:
+      TZ: Asia/Jakarta
+    restart: always
+    volumes:
+      - simpeg-web-admin-volume:/vol/app
+    networks:
+      - simpeg-api-networks
+
+volumes:
+  simpeg-web-admin-volume:
+    name: simpeg-web-admin-volume
+    driver: local
+
+networks:
+  simpeg-api-networks:
+    name: simpeg-api-networks
+    driver: bridge
+    external: true

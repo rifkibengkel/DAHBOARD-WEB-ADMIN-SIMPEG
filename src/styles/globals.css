@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  font-weight: 400;
+  background: url("/assets/bg/simpeg_bg.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-moz-selection {
+  background: #0478ff;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  -moz-text-fill-color: #fff;
+}
+
+::selection {
+  background: #0478ff;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  -moz-text-fill-color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #f8f9fd inset !important;
+  -webkit-text-fill-color: #536580;
+}
+
+input:-moz-autofill,
+input:-moz-autofill:hover,
+input:-moz-autofill:focus,
+input:-moz-autofill:active {
+  -moz-box-shadow: 0 0 0 30px #f8f9fd inset !important;
+  -moz-text-fill-color: #536580;
+}
+
+.leaflet-tooltip {
+  display: none !important;
+}

@@ -1,0 +1,19 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# compiled output
+.next
+node_modules
+
+# dependencies
+pnpm-lock.yaml
+yarn.lock
+
+# env files
+.env
+.env.development
+.env.staging
+.env.production
+.env.example
+
+# typescript
+next-env.d.ts

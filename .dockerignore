@@ -1,0 +1,17 @@
+# compiled output
+.next
+node_modules
+
+# config
+.git
+.gitignore
+.dockerignore
+.prettierignore
+.vscode
+
+# misc
+.eslintrc.js
+.prettierrc
+.npmrc
+README.md
+next-env.d.ts
